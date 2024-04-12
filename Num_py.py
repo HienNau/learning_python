@@ -1,4 +1,12 @@
+import pandas as pd
 import numpy as np
+s = pd.Series(["a", "b", "c"], name="vals")
+s = s.to_frame()
+print(type(s))
+print(np.random.seed(10))
+data = np.random.normal(100, 20, 200)
+print(data)
+
 my_list = [[1,2,3],[4,5,6],[7,8,9]] #tạo mảng 2 chiều
 print(np.array(my_list))
 

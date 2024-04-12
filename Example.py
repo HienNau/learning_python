@@ -28,3 +28,17 @@ for i in range(len(arr)):
 print(new_content)
 with open("Kteam.txt","w+") as f:
 	print(new_content,file=f) # Hoặc dùng câu lệnh f.write
+#Ví dụ về chuỗi nhị phân
+string = input("Nhap chuoi nhi phan: ")
+list_num = [int(x,2) for x in string.split(",")]
+print(list_num)
+list_kq = []
+for i in list_num:
+	if not i%5:
+		list_kq.append(str(i))
+print(",".join(list_kq))
+#VD nhập input số tự nhiên => Trả kết quả về dạng string tiếng việt
+x = input("Hãy nhập số: ")
+i = int(x[0])
+F_List= ["Không","Một","Hai","Ba","Bốn","Năm","Sáu","Bảy","Tám","Chín"]
+print(F_List[i])
